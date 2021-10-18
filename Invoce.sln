@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoceView", "InvoseView\InvoceView.csproj", "{7A17982A-A383-4891-A796-FA06D28829E9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoceViewLib", "InvoceViewLib\InvoceViewLib.csproj", "{702CEB20-AD22-46B0-BBAF-FA7BDF2F5503}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoceViewModelLib", "InvoceViewModelLib\InvoceViewModelLib.csproj", "{B376E7E7-87FC-4998-AC7F-217F93E15C37}"
@@ -19,16 +17,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoceDb", "InvoceDb\Invoce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoceConsole", "InvoceConsole\InvoceConsole.csproj", "{947E40B5-BD7F-4CE0-8E37-4941365B439F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoceUCLib", "InvoceUCLib\InvoceUCLib.csproj", "{A6783416-49EA-4FA3-8D98-0628618F2331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoceView", "InvoceView\InvoceView.csproj", "{9E0841B0-682C-4C5A-9F40-C226536ECBF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7A17982A-A383-4891-A796-FA06D28829E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7A17982A-A383-4891-A796-FA06D28829E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7A17982A-A383-4891-A796-FA06D28829E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7A17982A-A383-4891-A796-FA06D28829E9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{702CEB20-AD22-46B0-BBAF-FA7BDF2F5503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{702CEB20-AD22-46B0-BBAF-FA7BDF2F5503}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{702CEB20-AD22-46B0-BBAF-FA7BDF2F5503}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +55,14 @@ Global
 		{947E40B5-BD7F-4CE0-8E37-4941365B439F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{947E40B5-BD7F-4CE0-8E37-4941365B439F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{947E40B5-BD7F-4CE0-8E37-4941365B439F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6783416-49EA-4FA3-8D98-0628618F2331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6783416-49EA-4FA3-8D98-0628618F2331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6783416-49EA-4FA3-8D98-0628618F2331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6783416-49EA-4FA3-8D98-0628618F2331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E0841B0-682C-4C5A-9F40-C226536ECBF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E0841B0-682C-4C5A-9F40-C226536ECBF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E0841B0-682C-4C5A-9F40-C226536ECBF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E0841B0-682C-4C5A-9F40-C226536ECBF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
