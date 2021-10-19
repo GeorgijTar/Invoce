@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
 
 namespace InvoceDb.Entitys
 {
-  public class PayDetail: BaseEntity
+    /// <summary>
+    /// Класс Платежных реквизитов Контрагентов
+    /// </summary>
+    public class PayDetail: BaseEntity
     {
         public Status Status { get; set; }
         public string Title { get; set; }
@@ -19,8 +18,6 @@ namespace InvoceDb.Entitys
         public string NameBank { get; set; }
 
         public string Bik { get; set; }
-
-        public Counterparty Counterparty { get; set; }
 
         [Required]
         public DateTime TimeStamp { get; set; }

@@ -5,4 +5,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\InvoceDb\InvoceDb.csproj" />
+    <ProjectReference Include="..\InvoceModelLib\InvoceModelLib.csproj" />
+  </ItemGroup>
+
 </Project>

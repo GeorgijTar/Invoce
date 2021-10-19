@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 
@@ -18,6 +19,8 @@ namespace InvoceDb.Entitys
         public string Inn { get; set; }
         [Required(ErrorMessage = "КПП обязательное поле"), MaxLength(9, ErrorMessage = "Не верный формат КПП")]
         public string Kpp { get; set; }
+
+        public List<PayDetail> PayDetail { get; set; }
 
         [Required]
         public DateTime TimeStamp { get; set; }
