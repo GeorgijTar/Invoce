@@ -15,6 +15,7 @@ namespace InvoceDb.Entitys
         [Required(ErrorMessage = "Поле пароль обязательно для заполнения")]
         public string Password { get; set; }
 
-        public DateTime DateCreation { get; set; }
+        [Required]
+        public DateTime TimeStamp { get; set; }
     }
 }

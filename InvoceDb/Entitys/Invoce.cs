@@ -29,5 +29,8 @@ namespace InvoceDb.Entitys
 
         public byte[] File { get; set; }
 
+        [Required]
+        public DateTime TimeStamp { get; set; }
+
     }
 }
