@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
 
-namespace InvoceModel
+namespace InvoceDb.Entitys
 {
-  public class PayDetail: BaseModel
+  public class PayDetail: BaseEntity
     {
         public Status Status { get; set; }
         public string Title { get; set; }

@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace InvoceModel
+namespace InvoceDb.Entitys
 {/// <summary>
  /// Базовый класс модели
  /// </summary>
-    public class BaseModel
+    public class BaseEntity
     {
         [Key]
         public int Id { get; set; }

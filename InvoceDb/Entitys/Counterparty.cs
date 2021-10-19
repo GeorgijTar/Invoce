@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 
-namespace InvoceModel
+namespace InvoceDb.Entitys
 {
     /// <summary>
     /// Класс Контрагент
     /// </summary>
-    public class Counterparty : BaseModel
+    public class Counterparty : BaseEntity
     {
         public Status Status { get; set; }
         [Required (ErrorMessage ="Наименование обязательное поле"), MaxLength(250)]
@@ -15,7 +15,6 @@ namespace InvoceModel
         public string PayName { get; set; }
         [Required(ErrorMessage = "ИНН обязательное поле"), MaxLength(12, ErrorMessage = "Не верный формат ИНН")]
         public string Inn { get; set; }
-
         [Required(ErrorMessage = "КПП обязательное поле"), MaxLength(9, ErrorMessage = "Не верный формат КПП")]
         public string Kpp { get; set; }
 

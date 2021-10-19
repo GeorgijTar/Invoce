@@ -2,10 +2,13 @@
 using System.ComponentModel.DataAnnotations;
 
 
-namespace InvoceModel
+namespace InvoceDb.Entitys
 {
-    public class User : BaseModel
+    public class User : BaseEntity
     {
+        [Required]
+        public Status Status { get; set; }
+
         [Required (ErrorMessage ="Поле логин обязательно для заполнения")]
         public string Login { get; set; }
 
