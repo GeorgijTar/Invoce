@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoceUCLib", "InvoceUCLib\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoceView", "InvoceView\InvoceView.csproj", "{9E0841B0-682C-4C5A-9F40-C226536ECBF1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{792211AD-8E5B-4D41-B601-A53AD40E89F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{9E0841B0-682C-4C5A-9F40-C226536ECBF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E0841B0-682C-4C5A-9F40-C226536ECBF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E0841B0-682C-4C5A-9F40-C226536ECBF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{792211AD-8E5B-4D41-B601-A53AD40E89F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{792211AD-8E5B-4D41-B601-A53AD40E89F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{792211AD-8E5B-4D41-B601-A53AD40E89F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{792211AD-8E5B-4D41-B601-A53AD40E89F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
