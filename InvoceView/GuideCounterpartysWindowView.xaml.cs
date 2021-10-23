@@ -17,9 +17,9 @@ namespace InvoceView
     /// <summary>
     /// Логика взаимодействия для GuideCounterpartyWindowView.xaml
     /// </summary>
-    public partial class GuideCounterpartyWindowView : Window
+    public partial class GuideCounterpartysWindowView : Window
     {
-        public GuideCounterpartyWindowView()
+        public GuideCounterpartysWindowView()
         {
             InitializeComponent();
         }

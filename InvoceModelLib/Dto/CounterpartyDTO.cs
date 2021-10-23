@@ -10,20 +10,20 @@ namespace InvoceModelLib.Dto
     /// </summary>
     public class CounterpartyDTO : BaseEntityDTO
     {
-        public StatusDTO Status { get; set; }
-        [Required (ErrorMessage ="Наименование обязательное поле"), MaxLength(250)]
-        public string Name { get; set; }
-        [Required(ErrorMessage = "Платежное наименование обязательное поле"), MaxLength(250, ErrorMessage ="Длинна наименования не должна привышать 250 символов")]
-        public string PayName { get; set; }
-        [Required(ErrorMessage = "ИНН обязательное поле"), MaxLength(12, ErrorMessage = "Не верный формат ИНН")]
-        public string Inn { get; set; }
-        [Required(ErrorMessage = "КПП обязательное поле"), MaxLength(9, ErrorMessage = "Не верный формат КПП")]
-        public string Kpp { get; set; }
+        public virtual StatusDTO Status { get; }
+        public string Name { get; }
+        public string PayName { get; }
+        public string INN { get; }
+        public string KPP { get; }
+        public string OGRN { get; }
+        public string OKPO { get; }
+        public string PhoneNumber { get; }
+        public string Email { get; }
+        public DateTime RegistrationDate { get; }
+        public string Address { get; }
+        public DateTime TimeSpan { get;  }
 
-        public List<PayDetailDTO> PayDetail { get; set; }
-
-        [Required]
-        public DateTime TimeStamp { get; set; }
+        public List<PayDetailDTO> PayDetail { get;  }
 
     }
 }

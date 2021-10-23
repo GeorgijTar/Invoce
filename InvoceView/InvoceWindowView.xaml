@@ -16,7 +16,7 @@
         <ToolBar Grid.Row="0">
             <Button Margin="3,0" Padding="10,2" BorderBrush="DarkBlue">
                 <StackPanel Orientation="Horizontal">
-                    <fa5:ImageAwesome Height="20" Icon="Solid_Save" Margin="10,0"
+                    <fa5:ImageAwesome Height="20" Icon="Solid_PlusCircle" Margin="10,0"
                                                       Foreground="DarkBlue"/>
                     <TextBlock Text="Создать" VerticalAlignment="Center" FontSize="12" FontWeight="Bold"/>
                 </StackPanel>
