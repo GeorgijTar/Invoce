@@ -22,5 +22,7 @@ namespace InvoceDb.Entitys
         [Required]
         public DateTime TimeStamp { get; set; }
 
+        public Counterparty Counterparty { get; set; }
+        public int CounterpartyId { get; set; }
     }
 }

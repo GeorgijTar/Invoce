@@ -6,31 +6,44 @@ namespace InvoceModelLib.Dto
 {
     public class InvoceDTO : BaseEntityDTO
     {
-        [Required]
-        public StatusDTO Status { get; set; }
-        [Required(ErrorMessage ="Поле Номер является обязательным")]
-        public string Number { get; set; }
-        [Required]
-        public DateTime DateInvoce { get; set; }
+        public InvoceDTO(int id,
+                         int statusId,
+                         string number,
+                         DateTime dateInvoce,
+                         int regNumber,
+                         DateTime regDateInvoce,
+                         int counterpartyId,
+                         decimal amount,
+                         int ndsPercent,
+                         decimal ndsAmount,
+                         string description,                         
+                         DateTime timeStamp): base (id)
+        {
 
-        public int RegNumber { get; set; }
+            StatusId = statusId;
+            Number = number;
+            DateInvoce = dateInvoce;
+            RegNumber = regNumber;
+            RegDateInvoce = regDateInvoce;
+            CounterpartyId = counterpartyId;
+            Amount = amount;
+            NdsPercent = ndsPercent;
+            NdsAmount = ndsAmount;
+            Description = description;
+            TimeStamp = timeStamp;
+        }
 
-        public DateTime RegDateInvoce { get; set; }
-        [Required(ErrorMessage = "Поле Контрагент является обязательным")]
-        public CounterpartyDTO Counterparty { get; set; }
-        [Required(ErrorMessage = "Поле Сумма является обязательным")]
-        public decimal Amount { get; set; }
-
+        public int StatusId { get; }      
+        public string Number { get; }      
+        public DateTime DateInvoce { get; }
+        public int RegNumber { get; }
+        public DateTime RegDateInvoce { get; }        
+        public int CounterpartyId { get; }      
+        public decimal Amount { get; }
         public int NdsPercent { get; set; }
-
-        public decimal NdsAmount { get; set; }
-        [Required(ErrorMessage = "Поле Описание является обязательным")]
-        public string Description { get; set; }
-
-        public byte[] File { get; set; }
-
-        [Required]
-        public DateTime TimeStamp { get; set; }
+        public decimal NdsAmount { get; }       
+        public string Description { get; }
+        public DateTime TimeStamp { get; }
 
     }
 }

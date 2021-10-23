@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace InvoceModelLib
 {
-   public interface ICounterparty
+    public interface ICounterparty
     {
         IEnumerable<CounterpartyDTO> GetCounterparties();
         CounterpartyDTO GetCounterparty(int Id);

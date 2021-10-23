@@ -7,20 +7,34 @@ namespace InvoceModelLib.Dto
     /// <summary>
     /// Класс Платежных реквизитов Контрагентов
     /// </summary>
-    public class PayDetailDTO: BaseEntityDTO
+    public class PayDetailDTO : BaseEntityDTO
     {
-        public StatusDTO Status { get; set; }
-        public string Title { get; set; }
+        public PayDetailDTO(int id,
+                            int statusId,
+                            string title,
+                            string paymentAccount,
+                            string nameBank,
+                            string bik,
+                            DateTime timeStamp,
+                            int counterpartyId) : base(id)
+        {
+            StatusId = statusId;
+            Title = title;
+            PaymentAccount = paymentAccount;
+            NameBank = nameBank;
+            Bik = bik;
+            TimeStamp = timeStamp;
+            CounterpartyId = counterpartyId;
+        }
 
-        [Required (ErrorMessage ="Поле расчетный счет обязательно для заполнения"), MaxLength(20, ErrorMessage ="Не верный формат расчетного счета")]
-        public string PaymentAccount { get; set; }
+        public int StatusId { get; }
+        public string Title { get; }
+        public string PaymentAccount { get; }
+        public string NameBank { get; }
+        public string Bik { get; }
 
-        public string NameBank { get; set; }
-
-        public string Bik { get; set; }
-
-        [Required]
-        public DateTime TimeStamp { get; set; }
+        public int CounterpartyId { get; }
+        public DateTime TimeStamp { get; }
 
     }
 }

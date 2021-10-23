@@ -31,6 +31,5 @@ namespace InvoceDb.Entitys
         public string Address { get; set; } //Адрес для документов
         public DateTime TimeSpan { get; set; }// Дата добавления в бд
 
-        public List<PayDetail> PayDetail { get; set; }
     }
 }

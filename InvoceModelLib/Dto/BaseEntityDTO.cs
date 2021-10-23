@@ -5,7 +5,13 @@ namespace InvoceModelLib.Dto
  /// Базовый класс модели
  /// </summary>
     public class BaseEntityDTO
+
     {
-        public int Id { get; set; }
+        protected BaseEntityDTO(int id)
+        {
+            Id = id;
+        }
+
+        public int Id { get;}
     }
 }

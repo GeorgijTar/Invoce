@@ -5,9 +5,13 @@ namespace InvoceModelLib.Dto
 {/// <summary>
  /// Слас реализации модели Статусов
  /// </summary>
-    public class StatusDTO: BaseEntityDTO
+    public class StatusDTO : BaseEntityDTO
     {
-        [Required (ErrorMessage ="Наименование татуса обязательно для заполнения")]
-        public string Name { get; set; }
+        public StatusDTO(int id, string name) : base(id)
+        {
+            Name = name;
+        }
+
+        public string Name { get; }
     }
 }

@@ -1,8 +1,9 @@
-﻿using InvoceDb.Entitys;
+﻿
+using InvoceModelLib.Dto;
 using Simplified;
 using System.Collections.ObjectModel;
 
-namespace InvoceViewModel
+namespace InvoceViewModelLib
 {
     public interface IPayViewModel
     {
@@ -12,7 +13,6 @@ namespace InvoceViewModel
         RelayCommand<PayDetailDTO> EdetePayDetailsCommand { get; }
         RelayCommand<PayDetailDTO> DeletePayDetailsCommand { get; }
     }
-
 
 
 }
