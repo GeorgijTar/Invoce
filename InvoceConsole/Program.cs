@@ -1,4 +1,6 @@
-﻿using System;
+﻿using InvoceDb;
+using System;
+using System.Linq;
 
 namespace InvoceConsole
 {
@@ -6,7 +8,14 @@ namespace InvoceConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            var db = new InvoceDbContext();
+           int t= db.Status.Count();
+
+            Console.WriteLine(t);
+
+            Console.ReadKey();
+
         }
     }
 }

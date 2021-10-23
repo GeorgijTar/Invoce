@@ -5,8 +5,20 @@ namespace InvoceModelLib
 {
     public interface IInvoceModel
     {
-        IEnumerable<CounterpartyDto> GetCounterparties();
-        IEnumerable<PayDetailDto> GetPayDetails(CounterpartyDto counterparty);
-        IEnumerable<PayDetailDto> GetPayDetails();
+        IEnumerable<InvoceDTO> GetInvoces();
+        InvoceDTO GetInvoce(int Id);
+
+        IEnumerable<CounterpartyDTO> GetCounterparties();
+        CounterpartyDTO GetCounterparty(InvoceDTO invoce);
+
+        IEnumerable<PayDetailDTO> GetPayDetails(CounterpartyDTO counterparty);
+        IEnumerable<PayDetailDTO> GetPayDetails();
+        IEnumerable<StatusDTO> GetStatuses();
+        StatusDTO GetStatus(int Id);
+        IEnumerable<UserDTO> GetUsers();
+
+
+
+
     }
 }

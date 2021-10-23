@@ -1,31 +1,37 @@
-﻿<Window x:Class="InvoceView.InvoceWindowView"
+﻿<Window x:Class="InvoceView.GuideCounterpartyWindowView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InvoceView" xmlns:fa5="http://schemas.fontawesome.com/icons/"
         mc:Ignorable="d"
-        Title="InvoceWindowView" Height="550" Width="1000">
+        Title="GuideCounterpartyWindowView" Height="500" Width="900">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="35"/>
             <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
         <ToolBar Grid.Row="0">
-            <Button Margin="3,0" Padding="10,2" BorderBrush="DarkBlue">
+            <Button Margin="3,0" Padding="10,2" BorderBrush="DarkBlue" Width="140">
                 <StackPanel Orientation="Horizontal">
                     <fa5:ImageAwesome Height="20" Icon="Solid_Save" Margin="10,0"
                                                       Foreground="DarkBlue"/>
                     <TextBlock Text="Создать" VerticalAlignment="Center" FontSize="12" FontWeight="Bold"/>
                 </StackPanel>
             </Button>
-            <Button Margin="3,0" Padding="10,2" BorderBrush="DarkGreen">
+            <Button Margin="3,0" Padding="10,2" BorderBrush="DarkGreen" Width="140">
                 <StackPanel Orientation="Horizontal" >
                     <fa5:ImageAwesome Height="20" Icon="Solid_Edit"  Margin="4,0"                                                   
                                                      Foreground="DarkGreen"/>
                     <TextBlock Text="Редактировать" VerticalAlignment="Center" FontSize="12" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+            <Button Margin="3,0" Padding="10,2" BorderBrush="DarkGreen" Width="140">
+                <StackPanel Orientation="Horizontal" >
+                    <fa5:ImageAwesome Height="20" Icon="Solid_Trash"  Margin="4,0"                                                   
+                                                     Foreground="DarkRed"/>
+                    <TextBlock Text="Удалить" VerticalAlignment="Center" FontSize="12" FontWeight="Bold"/>
                 </StackPanel>
             </Button>
         </ToolBar>
@@ -36,9 +42,6 @@
         <DataGrid FontWeight="Normal" Margin="3" Grid.Row="2">
 
         </DataGrid>
-        <StatusBar Grid.Row="32">
-            <StatusBarItem Content="Готово!" Margin="10,0"/>
-        </StatusBar>
 
     </Grid>
 </Window>

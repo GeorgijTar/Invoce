@@ -3,21 +3,7 @@ using Microsoft.EntityFrameworkCore;
 namespace InvoceDb
 
 {
-
-    //    public class EFConfiguration : DbConfiguration
-    //    {
-    //        public EFConfiguration()
-    //        {
-    //            SetProviderFactory("System.Data.SQLite", System.Data.SQLite.SQLiteFactory.Instance);
-    //            SetProviderFactory("System.Data.SQLite.EF6", System.Data.SQLite.EF6.SQLiteProviderFactory.Instance);
-    //            SetProviderServices("System.Data.SQLite", (System.Data.Entity.Core.Common.DbProviderServices)System.Data.SQLite.EF6.SQLiteProviderFactory.Instance.GetService(typeof(System.Data.Entity.Core.Common.DbProviderServices)));
-    //        }
-    //    }
-
-    //    [DbConfigurationType(typeof(EFConfiguration))]
-
-
-    class InvoceDbContext : DbContext
+  public  class InvoceDbContext : DbContext
     {
         public InvoceDbContext() : base()
         {
