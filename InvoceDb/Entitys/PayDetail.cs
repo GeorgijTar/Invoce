@@ -18,6 +18,8 @@ namespace InvoceDb.Entitys
         public string NameBank { get; set; }
 
         public string Bik { get; set; }
+        [MaxLength(20, ErrorMessage = "Не верный формат корреспондентского счета")]
+        public string CorrAccount { get; set; }
 
         [Required]
         public DateTime TimeStamp { get; set; }

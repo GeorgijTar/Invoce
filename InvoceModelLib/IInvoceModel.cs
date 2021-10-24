@@ -6,7 +6,7 @@ namespace InvoceModelLib
     public interface IInvoceModel
     {
         IEnumerable<InvoceDTO> GetInvoces();
-        InvoceDTO GetInvoce(int Id);
+        InvoceDTO GetInvoce(int id);
 
         IEnumerable<CounterpartyDTO> GetCounterparties();
         CounterpartyDTO GetCounterparty(InvoceDTO invoce);
@@ -14,7 +14,7 @@ namespace InvoceModelLib
         IEnumerable<PayDetailDTO> GetPayDetails(CounterpartyDTO counterparty);
         IEnumerable<PayDetailDTO> GetPayDetails();
         IEnumerable<StatusDTO> GetStatuses();
-        StatusDTO GetStatus(int Id);
+        StatusDTO GetStatus(int id);
         IEnumerable<UserDTO> GetUsers();
 
 

@@ -27,8 +27,6 @@ namespace InvoceDb.Entitys
         [Required(ErrorMessage = "Поле Описание является обязательным")]
         public string Description { get; set; }
 
-        public byte[] File { get; set; }
-
         [Required]
         public DateTime TimeStamp { get; set; }
 

@@ -41,9 +41,14 @@ namespace InvoceModel
                payDetail.PaymentAccount,
                payDetail.NameBank,
                payDetail.Bik,
+               payDetail.CorrAccount,
                payDetail.TimeStamp,
                payDetail.CounterpartyId);
 
-    }
 
+        public static StatusDTO Create(Status status)
+          => new StatusDTO(status.Id,status.Name);
+
+
+    }
 }
