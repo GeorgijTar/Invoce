@@ -24,7 +24,7 @@ namespace InvoceViewModelLib
 
         public CounterpartyDTO EditingCounterparty { get; }
 
-        public IReadOnlyDictionary<int, StatusDTO> Statuses { get; }
+        public IEnumerable<StatusDTO> Statuses { get; }
 
         ObservableCollection<PayDetailDTO> EditingPayDetail { get; }
     }
