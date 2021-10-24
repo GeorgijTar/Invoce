@@ -15,7 +15,8 @@ namespace InvoceModelLib.Dto
                             string paymentAccount,
                             string nameBank,
                             string bik,
-                            DateTime timeStamp,
+                            string corrAccount,
+        DateTime timeStamp,
                             int counterpartyId) : base(id)
         {
             StatusId = statusId;
@@ -23,6 +24,7 @@ namespace InvoceModelLib.Dto
             PaymentAccount = paymentAccount;
             NameBank = nameBank;
             Bik = bik;
+            CorrAccount = corrAccount;
             TimeStamp = timeStamp;
             CounterpartyId = counterpartyId;
         }
@@ -33,6 +35,7 @@ namespace InvoceModelLib.Dto
         public string NameBank { get; }
         public string Bik { get; }
 
+        public string CorrAccount { get; }
         public int CounterpartyId { get; }
         public DateTime TimeStamp { get; }
 

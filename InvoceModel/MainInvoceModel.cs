@@ -33,7 +33,7 @@ namespace InvoceModel
         public CounterpartyDTO GetCounterparty(int id)
         {
             Counterparty counterparty;
-            using (InvoceDbContext db = new InvoceDbContext())
+            using (InvoceDbContext db = new())
             {
                 counterparty = db.Counterparty.Find(id);
             }
@@ -49,7 +49,7 @@ namespace InvoceModel
         public InvoceDTO GetInvoce(int id)
         {
             Invoce invoce;
-            using (InvoceDbContext db = new InvoceDbContext())
+            using (InvoceDbContext db = new())
             {
                 invoce = db.Invoce.Find(id);
             }
@@ -60,7 +60,7 @@ namespace InvoceModel
         public IEnumerable<InvoceDTO> GetInvoces()
         {
             Invoce [] invoces;
-            using (InvoceDbContext db = new InvoceDbContext())
+            using (InvoceDbContext db = new())
             {
                 invoces = db.Invoce.ToArray();
             }
@@ -70,9 +70,9 @@ namespace InvoceModel
         public IEnumerable<PayDetailDTO> GetPayDetails(CounterpartyDTO counterparty)
         {
             PayDetail[] payDetails;
-            using (InvoceDbContext db = new InvoceDbContext())
+            using (InvoceDbContext db = new())
             {
-                payDetails = db.PayDetail.Where(d=>d.CounterpartyId==counterparty.Id).ToArray();
+                payDetails = db.PayDetail.Where(d => d.CounterpartyId == counterparty.Id).ToArray();
             }
             return Array.AsReadOnly(payDetails.Select(Create).ToArray());
         }
@@ -80,21 +80,31 @@ namespace InvoceModel
         public IEnumerable<PayDetailDTO> GetPayDetails()
         {
             PayDetail[] payDetails;
-            using (InvoceDbContext db = new InvoceDbContext())
+            using (InvoceDbContext db = new())
             {
                 payDetails = db.PayDetail.ToArray();
             }
             return Array.AsReadOnly(payDetails.Select(Create).ToArray());
         }
 
-        public StatusDTO GetStatus(int Id)
+        public StatusDTO GetStatus(int id)
         {
-            throw new NotImplementedException();
+            Status status;
+            using (InvoceDbContext db=new())
+            {
+                status = db.Status.Find(id);
+            }
+            return Create(status);            
         }
-
         public IEnumerable<StatusDTO> GetStatuses()
         {
-            throw new NotImplementedException();
+            Status[] statuses;
+            using(InvoceDbContext db=new())
+            {
+                statuses = db.Status.ToArray();
+            }
+
+            return Array.AsReadOnly(statuses.Select(Create).ToArray());
         }
 
         public IEnumerable<UserDTO> GetUsers()

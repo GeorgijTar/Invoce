@@ -10,12 +10,9 @@ namespace InvoceModelLib
     public interface ICounterparty
     {
         IEnumerable<CounterpartyDTO> GetCounterparties();
-        CounterpartyDTO GetCounterparty(int Id);
+        CounterpartyDTO GetCounterparty(int id);
         IEnumerable<StatusDTO> GetStatuses();
-        StatusDTO GetStatus(int Id);
-
-
-
+        StatusDTO GetStatus(int id);
 
     }
 }
